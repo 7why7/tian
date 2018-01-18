@@ -1,0 +1,353 @@
+#header iframe{
+			width:100%;
+		}
+		#footer iframe{
+			width:100%;
+			height:500px;
+			margin-top:100px;
+		}
+		#select-all{	
+			margin-top: 60px;
+			background-color:#F3F5F6;
+		}
+		#f-title{
+			width:1200px;
+		/*	height:126px;*/
+			margin-left: 335px;
+			margin-top: -40px;
+			background-color:#fff;
+		}
+		#f-title a{
+			text-decoration:none;
+			color:#333;
+		}
+		#pdp-top{
+			width:1200px;
+/*			height:126px;*/
+/*			border:1px solid red;*/
+			margin-left: 335px;
+/*			margin-top: -40px;*/
+			background-color:#fff;
+			display:flex;
+			flex-wrap:wrap;
+			justify-content:space-between;
+		}
+		#pdp-banner{
+			width:750px;
+			height:700px;
+/*			border:1px solid red;*/
+		}
+		#pdp-top h1{
+			font-size: 24px;
+			color: #333;
+			line-height: 40px;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			font-weight: normal;
+		}
+		#pdp-top h2{
+			margin-bottom: 25px;
+			font-size: 14px;
+			color: #333;
+			line-height:2;
+			font-weight: normal;
+		}
+		#pdp-option{
+			width:370px;
+			height:700px;
+/*			border:1px solid red;*/
+		}
+
+
+		 #d-md-img{
+            width: 470px;
+            height: 195px;
+/*			border:1px solid red;*/
+        }
+		 #md-image{
+            width: 470px;
+            height: 195px;
+			margin: 0 auto;
+/*            margin-top: 55px;*/
+/*            display: block;*/
+        }
+		#left-pic{
+			width: 470px;
+            height: 195px;
+			left:100px;
+			top:20px;
+			position:relative;
+/*			border:1px solid red;*/
+		}
+/*		显示小方框*/
+		#mask{
+			width:150px;
+			height:150px;
+			position:absolute;
+			top:0;
+			left:0;
+			background-color: #A0C5E8;
+            opacity: 0.3;
+            display: none;
+		}
+		#supermask{
+            width: 470px;
+            height: 195px;
+            position: absolute;
+/*			border:1px solid red;*/
+            top:0;
+            cursor:crosshair;
+        }
+		#lg-img{
+			position:absolute;
+			left:520px;
+			top:-75px;
+			width:450px;
+			height:340px;
+			display:none;
+			border:1px solid #a59a9a;
+			
+		}
+		#box ul li img{
+			width:100px;
+			height:50px;
+			display:block;
+		}
+		#box ul{
+			list-style: none;
+			width: 400px;
+			height:50px;
+            margin: 0 auto;
+            padding: 10px;
+			margin-left: 20px;
+			margin-top: 20px;
+            border: 1px solid #a59a9a;
+		}
+		#box ul.pic-ul>li{
+			display:inline-block;
+			padding:0;
+		}
+/*		右边的样式内容*/
+		#pdp-option div.p-price{
+			width:100%;
+			height:45px;
+			margin-top: 10px;
+/*			border:1px solid red;*/
+		}
+		#pdp-option div.p-price span{
+			font-size: 16px;
+			color: #333;
+		}
+		#pdp-option div.p-price i{
+			padding-right: 15px;
+			font-size: 30px;
+			color: #dc244b;
+			font-weight: normal;
+		}
+		#pdp-option del{
+			color:#838282;
+		}
+/*		出游日期*/
+		#pdp-option p{
+			margin-top:20px;
+		}
+		#pdp-option input.calender{
+			width: 350px;
+			height: 25px;
+			padding-left: 62px;
+			margin-top:20px;
+			box-sizing:border-box;
+			font-size: 14px;
+			line-height: 38px;
+			color: #f11e1e;
+		}
+		#pdp-option input.p-calender{
+			width: 370px;
+			height: 25px;
+			padding-left: 62px;
+			box-sizing:border-box;
+			font-size: 14px;
+			line-height: 38px;
+			color: #333;
+		}
+/*		选择框*/
+		#select-box{
+			width:370px;
+			height:165px;
+			margin-top:20px;
+/*			border:1px solid red;*/
+		}
+		#select-box a{
+			text-decoration:none;
+			float: left;
+			min-width: 50px;
+			margin: 0 30px 10px 0;
+			padding: 5px 15px;
+			line-height: 20px;
+			font-size: 14px;
+			color: #333;
+			margin-left:40px;
+			border-radius: 15px;
+			background-color: #eee;
+			text-align: center;
+		}
+		#select-box a:hover{
+			color:#fff;
+			background-color:red;
+		}
+		#select-box dt.all-time{
+			clear:both;
+		}
+		#btn-box{
+			width:370px;
+			height:50px;
+			margin-top:30px;
+/*			border:1px solid red;*/
+		}
+		#btn-box a{
+			width: 130px;
+			height: 42px;
+			line-height:42px;
+			text-decoration:none;
+			text-align: center;
+			border-radius: 4px;
+			color:#333;
+			font-size: 16px;
+			display:block;
+			float:left;
+			border: 1px solid #dc244b;
+		}
+		#btn-box a.add-cart{
+			color:#fff;
+			background-color: #DC284B;
+			margin-right:85px;
+		}
+		#canvas{
+			cursor:pointer;
+		}
+		#app-pic{
+			width: 110px;
+			height: 110px;
+			margin-top:-10px;
+/*			border: 1px solid red;*/
+		}
+		#app-pic img{
+			position:absolute;
+			width: 110px;
+			height: 110px;			
+			display:none;
+			opacity: 1;
+		}
+		div.in{
+			display:block;
+			opacity: 1;
+		}
+/*		产品介绍*/
+		#p-detail{
+			width:1200px;
+/*			height:126px;*/
+			margin-left: 335px;
+			margin-top: 20px;
+/*			border:1px solid red;*/
+			background-color:#fff;
+		}
+		#p-detail h2{
+			margin-bottom: 50px;
+			font-size: 36px;
+			color: #333;
+			margin:0;
+			text-align: center;
+			font-weight: normal;
+		}
+		#p-detail img{
+			margin-left:210px;
+		}
+		#p-detail p{
+			margin: 5px 0 8px;
+			font-size: 26px;
+			line-height: 40px;
+			text-align: center;
+			text-indent: 0;
+		}
+		#p-detail li{
+			list-style:none;
+			margin-left: 210px;
+			padding:5px 0;
+		}
+		#p-detail span{
+			display: inline-block;
+			width: 760px;
+			margin-left: 210px;
+			margin-bottom: 15px;
+			font-size: 16px;
+		}
+/*		预定须知*/
+		#p-book{
+			width:1200px;
+/*			height:126px;*/
+			margin-left: 335px;
+			margin-top: 20px;
+/*			border:1px solid red;*/
+			background-color:#fff;
+		}
+		#p-book h2{
+			margin-bottom: 50px;
+			font-size: 36px;
+			color: #333;
+			margin:0;
+			text-align: center;
+			font-weight: normal;
+		}
+		#p-table table{
+			width:760px;
+/*			height:200px;*/
+			margin:0 auto;
+/*			border:1px solid red;*/
+			font-size: 14px;
+			color: #333;
+			border-collapse: collapse;
+		}
+		#p-table table td{
+			padding: 15px 28px;
+			border: 1px solid #e3e3e3;
+			vertical-align: middle;
+			text-align: left;
+		}
+		#p-table table td.book-head{
+			width: 160px;
+			font-size: 17px;
+			font-weight:600;
+			text-align: center;
+			border:1px solid #e3e3e3;
+			vertical-align:middle;
+		}
+/*		+  - 号*/
+		#show-list{
+			width:345px;
+			margin-top:20px;
+			border: 1px solid #A9A9A9;
+		}
+		#show-list span{
+			display:inline-block;
+			font-size:32px;
+			width:24px;
+			height:24px;
+			line-height:20px;
+			text-align:center;
+			color:#333;
+			cursor:pointer;
+			background:linear-gradient(to bottom,#f0f0f0,#e0e0e0);
+			vertical-align:top;
+		}
+		#show-list span.reduce{
+			font-size:40px;
+			line-height:16px;
+		}
+		#show-list input{
+			width:40px;
+			
+		}
+		#show-list span:hover{
+			background:linear-gradient(to bottom,#bbb,#b3b3b3);
+		}

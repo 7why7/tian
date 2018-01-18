@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>购物车</title>
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/cart.css">
+	
+	<style>
+	
+	</style>
+</head>
+<body>
+	<header id="header" style="margin-top:-8px;">
+	</header>
+<!-- 	删除提醒模态框 -->
+	<div class="modal" style="display:none">
+    <div class="modal_dialog">
+      <div class="modal_header">
+        删除提醒
+      </div>
+      <div class="modal_information">
+        <img src="img/model/model_img2.png" alt="" />
+        <span>确定删除您的这个宝贝吗？</span>
+      </div>
+      <div class="yes"><span>删除</span></div>
+      <div class="no"><span>不删除</span></div>
+    </div>
+  </div>
+  <div class="modalNo" style="display:none">
+    <div class="modal_dialog">
+      <div class="modal_header">
+        删除提示
+        <img src="img/model/model_img1.png" alt="" class="rt close" />
+      </div>
+      <div class="modal_information">
+        <img src="img/model/model_img2.png" alt="" />
+        <span>请选择商品</span>
+      </div>
+    </div>
+  </div>
+	<div id="big">
+		<form action="" method="post">
+			
+			<!--   购物车 -->
+				<div id="title">
+				  <b>购物车</b>
+				  <p>
+					已选<span class="total color">0</span>件商品<span class="interval"></span>合计(不含运费):<span class="totalPrices color susum">0.00</span>
+					<span class="unit color">元</span>
+				 </p>
+				</div>
+				
+				<div id="imfor_top">
+					<a class="all">
+					  <span class="normal">
+					  <img src="images/cart/product_normal.png" alt=""/> 
+<!-- 						<input type="checkbox"> -->
+					  </span> <input type="hidden" name="" value="">全选
+					</a>
+				  <a class="pudc_top">商品</a>
+				  <a class="pices_top">单价(元)</a>
+				  <a class="num_top">数量</a>
+				  <a class="totle_top">金额</a>
+				  <a class="del_top">操作</a>
+				</div>
+				<div id="session">
+                   <!--<div id="imfor"> 
+         					 
+         					  <div class="check normal"> 
+         						<img src="images/cart/product_normal.png" alt=""/> 
+         					  </div>  
+         					  <input type="hidden" name="" value=""> 
+         					   <div class="pudc_information" id="pudcId3"> 
+          						<a  href="detail.html">  
+         							<img class="p_img" src="images/new/s_new1.jpg" alt="">  
+          						</a>  
+          					<div class="details-txt">  
+          						<a>澳大利亚 | 青春派轰趴</a>  
+          					<p class="p1">我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，</p>  
+          					</div>  
+          					</div>  
+          					<div class="details-money">  
+          						￥1080  						 
+          					</div> 
+         					<div class="num"> 
+         						<span class="reduc">&nbsp;-&nbsp;</span> 
+         						<input class="col_num" type="text" value="1"> 
+         						<span class="add">&nbsp;+&nbsp;</span> 
+         					</div> 
+         					<div class="totle"> 
+         					  <span>￥</span> 
+         					  <span class="totle_information">4888.00</span> 
+         					</div> 
+         					<span class="del"> 
+         						<a href="javascript:;" class="del_d">删除</a> 
+         					</span> 
+         					</div> -->
+          
+         				<!--<div id="imfor"> 
+         					 
+         					  <div class="check normal"> 
+         						<img src="images/cart/product_normal.png" alt=""/> 
+         					  </div>  
+         					  <input type="hidden" name="" value=""> 
+         					  <div class="pudc_information" id="pudcId3"> 
+          						<a  href="detail.html">  
+         							<img class="p_img" src="images/new/s_new2.jpg" alt="">  
+          						</a>  
+          					<div class="details-txt">  
+          						<a>澳大利亚 | 青春派轰趴</a>  
+          					<p class="p1">我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，</p>  
+          					</div>  
+          					</div>  
+          					<div class="details-money">  
+          						￥1080  						 
+          					</div> 
+         					<div class="num"> 
+         						<span class="reduc">&nbsp;-&nbsp;</span> 
+         						<input class="col_num" type="text" value="1"> 
+         						<span class="add">&nbsp;+&nbsp;</span> 
+         					</div> 
+         					<div class="totle"> 
+         					  <span>￥</span> 
+         					  <span class="totle_information">4888.00</span> 
+         					</div> 
+         					<span class="del"> 
+         						<a href="javascript:;" class="del_d">删除</a> 
+         					</span> 
+         					</div> -->
+                     <!-- <div id="imfor"> 
+         					 
+         					  <div class="check normal"> 
+          						<img src="images/cart/product_normal.png" alt=""/>  
+         					  </div>  
+         					  <input type="hidden" name="" value=""> 
+         					  <div class="pudc_information" id="pudcId3"> 
+          						<a  href="detail.html">  
+         							<img class="p_img" src="images/new/s_new3.jpg" alt="">  
+          						</a>  
+          					<div class="details-txt">  
+          						<a>澳大利亚 | 青春派轰趴</a>  
+          					<p class="p1">我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，</p>  
+          					</div>  
+          					</div>	 
+          					<div class="details-money">  
+          						￥1080  						 
+          					</div> 
+         					<div class="num"> 
+         						<span class="reduc">&nbsp;-&nbsp;</span> 
+         						<input class="col_num" type="text" value="1"> 
+         						<span class="add">&nbsp;+&nbsp;</span> 
+         					</div> 
+         					<div class="totle"> 
+         					  <span>￥</span> 
+         					  <span class="totle_information">4888.00</span> 
+         					</div> 
+         					<span class="del"> 
+         						<a href="javascript:;" class="del_d">删除</a> 
+         					</span> 
+         					</div> 
+         				</div> 
+         			-->	
+					</div>
+					<div id="foot">				
+						  <div class="all">
+						<div class="foot_cash" id="go-buy">去结算</div>
+						<div class="foot_tol">
+							<span>合计(不含运费):</span>
+							<span class="foot_pices susumOne color">0.00</span>
+							<span class='foot_des'>元</span>
+						</div>
+						<div class="foot_selected">
+						  已选<span class="totalOne color">0</span>件商品
+						</div>
+						  </div>
+					</div>
+
+ 					</div> 
+				</div>
+
+			
+		</form>
+	<div id="none" style="display: none; z-index: 999">
+      <div class="none_content">
+        <p class="lf">您的购物车竟然还是空哒( ⊙ o ⊙ )</p>
+        <span class="lf">赶快去下单吧！</span>
+        <a href="products.html" class="lf">去购物>></a>
+      </div>
+    </div>
+
+	</div>
+
+	
+
+
+	<footer id="footer">
+	</footer>
+
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/header.js"></script> 
+	<script src="js/cart.js"></script> 
+ 	<script src="js/footer.js"></script> 
+	<script>
+		 <!--显示空购物车页面-->
+      $(function () {
+        if (!$("#imfor")) {
+          $('#section').hide();
+          $('.none').show();
+        }
+      })
+	</script>
+</body>
+</html>

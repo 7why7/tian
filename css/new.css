@@ -1,0 +1,447 @@
+*{
+	margin:0;
+	padding:0;
+}
+a,li,img,{
+	text-decoration:none;
+	list-style:none;
+
+}
+/*#header iframe{*/
+/*	width:100%;*/
+/*}*/
+#footer iframe{
+	width:100%;
+	height:500px;
+	margin-top:100px;
+}
+#main-wall{
+	background-color:#F3F5F6;
+}
+/*旅游推荐**************************/
+#filter{
+	width:1200px;
+/*	height:126px;*/
+	margin-left: 355px;
+    margin-top: -30px;
+	background-color:#fff;
+	box-sizing:border-box;
+}
+ #tra a.text{
+	
+	width: 130px;
+    /* height: 50px; */
+/*    border: 1px solid red;*/
+    font-size: 26px;
+    color: #fff;
+	background-color:#FF7800;
+    text-align: center;
+    line-height: 41px;
+	display:block;	
+}
+/************筛选**************/
+#filter li.aim{
+	width: 1100px;
+    height: 50px;
+	margin-left: 65px;
+    margin-top: -20px;
+	display:none;
+
+}
+#tar a.text:hover li{
+	display:block;
+}
+#filter li.aim a{
+	text-decoration:none;
+	color:#333;
+	margin-right:19px;
+	margin-top:5px;
+}
+#filter li.aim a:hover {
+/*	border:1px solid red;*/
+	color:#fff;
+	background-color:#FF7800;
+	border-radius:3px;
+}
+#result-border{
+	width:916px;
+/*	height:1540px;*/
+/*	border:1px solid red;*/
+/*	box-sizing:border-box;*/
+	margin-left: 350px;
+	margin-top:20px;
+	background-color:#fff;
+	display:flex;
+	flex-wrap:wrap;
+	justify-content:flex-start;
+}
+/*********#result-border  中的文字*********/
+#result-border div.a-title{
+	width:290px;
+	height:308px;
+	text-decoration:none;
+	color:#333;
+	margin-left:11px;
+}
+#result-border a.a-title{	
+	text-decoration:none;
+	width:290px;
+	height:308px;
+	color:#333;
+/*	margin-left:11px;*/
+}
+#result-border img{
+	width:290px;
+	height:163px;
+	transition:all .3s linear;
+}
+#result-border img:hover{
+	transform:scale(1.01);
+}
+#result-border div.details-txt{
+	margin-left:10px;
+}
+#result-border span.s1{
+	font-size:12px;
+}
+#result-border em{
+	font-size:12px;
+	color:#ff7800;
+}
+#result-border span.s2{
+	font-size:12px;
+}
+#result-border p.p1{
+	font-size:12px;
+	color:#999;
+}
+#result-border div.details-money{
+	font-size: 20px;
+    color: #ff4500;
+    font-weight: 700;
+}
+#result-border div.details-money span{
+	font-size:12px;
+	color:#999;
+}
+	#result-border div.details-money input{
+	float:right;
+    background-color: orange;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    width: 70px;
+    height: 25px;
+	cursor:pointer;
+}
+/*旅游攻略****************/
+#mod-guide{
+	width:262px;
+	height:397px;
+/*	border:1px solid red;*/
+	position: absolute;
+    top: 225px;
+    left: 1290px;
+	background-color:#fff;
+}
+#mod-guide h3{
+	margin-left:25px;
+	font-size: 16px;
+    overflow: hidden;
+    zoom: 1;
+    padding: 16px 0;
+    line-height: 24px;
+    color: #333;
+}
+#mod-guide div{
+	margin-bottom:15px;
+}
+/*南京，深圳，广州，珠海...**************/
+#mod-guide .color1{
+	display: block;
+    border: 1px solid #64b052;
+    color: #64b052;
+    border-radius: 2px;
+    width: 44px;
+    text-align: center;
+    line-height: 18px;
+    margin-right: 8px;
+/*    float: left;*/
+	margin-left: 25px;
+}
+#mod-guide .color1 a{
+	color:#64b052;
+}
+#mod-guide .color2 a{
+	color:#ff7800;
+}
+#mod-guide div span{
+	color:#333;
+	transition:all  linear;
+}
+#mod-guide div span:hover{
+	color:red;
+	text-decoration:underline;
+}
+#mod-guide .color2{
+	display: block;
+    border: 1px solid #ff7800;
+    color: red;
+    border-radius: 2px;
+    width: 44px;
+    text-align: center;
+    line-height: 18px;
+    margin-right: 8px;
+/*    float: left;*/
+	margin-left: 25px;
+}
+#mod-guide a{
+    text-decoration: none;
+	color:#333;
+}
+#mod-guide span{
+	display: block;
+    float: left;
+    overflow: hidden;
+    width: 160px;
+    line-height: 20px;
+	margin-left: 48px;
+    margin-top: -20px;
+}
+/*********热卖新品***********/
+#mod-package{
+	width:262px;
+/*	height:397px;*/
+/*	border:1px solid red;*/
+	position: absolute;
+    top: 666px;
+    left: 1290px;
+	background-color:#fff;
+}
+#mod-package a{
+	text-decoration:none;
+	color:#333;
+}
+#mod-package h3{
+	margin-left:25px;
+	font-size: 16px;
+    overflow: hidden;
+    zoom: 1;
+    padding: 16px 0;
+    line-height: 24px;
+    color: #333;
+}
+#mod-package img{
+	width:220px;
+	height:124px;
+	margin-left: 23px;
+	position:relative;
+}
+#mod-package p{
+	position:absolute;
+	width:220px;
+	height:24px;
+	line-height: 24px;
+    color: #fff;
+	overflow: hidden;
+    padding: 0 6px;
+	top: 156px;
+    left: 23px;
+    box-sizing: border-box;
+	background:#4C4C4C;
+}
+#mod-package p.p1{
+	position:absolute;
+	width:220px;
+	height:24px;
+	line-height: 24px;
+    color: #fff;
+	overflow: hidden;
+    padding: 0 6px;
+	top: 156px;
+    left: 23px;
+    box-sizing: border-box;
+	background:#4C4C4C;
+}
+#mod-package p.p2{
+	position:absolute;
+	top: 317px;
+    left: 23px;
+}
+#mod-package p.p3{
+	position:absolute;
+	top: 478px;
+    left: 23px;
+}
+#mod-package p.p4{
+	position:absolute;
+	top: 640px;
+    left: 23px;
+}
+
+#mod-package p.p5{
+	position:absolute;
+	top: 800px;
+    left: 23px;
+}
+#mod-package span{
+	font-size: 16px;
+    color: #ff7800;
+    margin-right: 7px;
+	margin-left: 23px;
+}
+#mod-package s{
+	color: #666;
+    font-size: 12px;
+}
+#mod-package button{
+	width: 60px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    background: #ff7800;
+    color: #fff;
+	border:none;
+	cursor:pointer;
+    border-radius: 2px;
+    font-size: 12px;
+    margin-left:44px;
+    margin-bottom: 10px;
+}
+
+
+/*购物车*/
+#cart div.store_action_right_cart {
+  position: absolute;
+  top: 300px;
+  margin-left:60px;
+
+}
+#cart div.store_action_right_cart_top {
+  width: 225px;
+  height: 28px;
+  font: 14px simhei;
+  line-height: 28px;
+  padding-left: 5px;
+  color: #b8b8b8;
+  background: -moz-linear-gradient(top, #f0f0f0 0%, #e0e0e0 100%);
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, #e0e0e0 100%);
+  background: -o-linear-gradient(top, #f0f0f0 0%, #e0e0e0 100%);
+  background: -ms-linear-gradient(top, #f0f0f0 0%, #e0e0e0 100%);
+  box-shadow: 0px 0px 6px #ccc;
+}
+#cart div.store_action_right_cart_top > span {
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+#cart div.store_action_right_cart_content > div {
+  width: 100%;
+  height: 33px;
+  line-height: 33px;
+  background: #fff;
+  border-bottom: 1px dashed #b8b8b8;
+
+}
+
+#cart div.store_action_right_cart_content > div > span:nth-child(1) {
+  font: 12px simhei;
+  color: #808080;
+  margin-left: 6px;
+  margin-right: 10px;
+}
+
+#cart div.store_action_right_cart_content > div > div {
+  width: 45px;
+  height: 14px;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  left: 17px;
+
+}
+
+#cart div.store_action_right_cart_content > div > div > span {
+  width: 14px;
+  height: 14px;
+  line-height: 14px;
+  text-align: center;
+  background: -moz-linear-gradient(top, #f0f0f0 0%, #e0e0e0 100%);
+  background: -webkit-linear-gradient(top, #f0f0f0 0%, #e0e0e0 100%);
+  background: -o-linear-gradient(top, #f0f0f0 0%, #e0e0e0 100%);
+  background: -ms-linear-gradient(top, #f0f0f0 0%, #e0e0e0 100%);
+  color: #fff;
+  cursor: pointer;
+}
+
+#cart div.store_action_right_cart_content > div > div > input {
+  width: 13px;
+  height: 14px;
+  line-height: 14px;
+  padding-left: 3px;
+  font-size: 12px;
+}
+
+#cart div.store_action_right_cart_content > div > .pc {
+  margin-right: 10px;
+}
+
+#cart div.sarc {
+  font: 20px simhei;
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  color: #fff;
+
+}
+
+#cart div.sarc:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#cart div.total_price {
+  width: 155px;
+  background: #808080;
+  display: inline-block;
+  text-align: center;
+}
+
+#cart div.total_price > img {
+  position: relative;
+  top: 2px;
+}
+
+#cart div.total_price span {
+  display: inline-block;
+  width: 60px;
+}
+
+#cart div.settle {
+  width: 75px;
+  background: -moz-linear-gradient(top, #27b1f6 0%, #0aa1ed 100%);
+  background: -webkit-linear-gradient(top, #27b1f6 0%, #0aa1ed 100%);
+  background: -o-linear-gradient(top, #27b1f6 0%, #0aa1ed 100%);
+  background: -ms-linear-gradient(top, #27b1f6 0%, #0aa1ed 100%);
+  text-align: center;
+  cursor: pointer;
+  float:right;
+}
+
+#cart div.cart_reduc:hover, .cart_add:hover {
+  background: -moz-linear-gradient(top, #bbb 0%, #b3b3b3 100%);
+  background: -webkit-linear-gradient(top, #bbb 0%, #b3b3b3 100%);
+  background: -o-linear-gradient(top, #bbb 0%, #b3b3b3 100%);
+  background: -ms-linear-gradient(top, #bbb 0%, #b3b3b3 100%);
+}
+
+#cart div.store_action_right_cart_content > div:first-child {
+  height: 1px;
+  width: 100%;
+}
+
+#cart div.store_action_right_cart_content {
+  max-height: 206px;
+  overflow: auto;
+}

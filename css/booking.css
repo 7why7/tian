@@ -1,0 +1,41 @@
+#booking{
+			background-color:#F3F5F6;
+		}
+		#book{
+			width:1180px;
+/*			height:500px;*/
+/*			border:1px solid red;*/
+			margin-left: 385px;
+			background-color:#fff;
+			padding:10px 15px;
+			box-sizing:border-box;
+		}
+		#book h2{
+			font-size: 30px;
+			font-weight: 400;
+/*			border:1px solid red;*/
+		}
+		#group{
+			width:1180px;
+/*			height:500px;*/
+/*			border:1px solid red;*/
+/*			margin-left: 385px;*/
+			display:flex;
+			flex-wrap:wrap;
+			justify-content:space-between;
+		}
+		#group a{
+			list-style:none;
+		}
+		#group img{
+			padding:10px 15px;
+			box-sizing:border-box;
+			width:213px;
+			height:148px;
+			margin-left:10px;
+			margin-right:10px;
+			border:1px solid #ddd;
+		}
+		#group img:hover{
+			box-shadow:5px 5px 5px #888888
+		}

@@ -1,0 +1,244 @@
+
+#header iframe{
+			width:100%;
+/*			height:600px;	*/
+		}
+		#footer iframe{
+			margin:0 auto;
+			width:100%;
+/*			height:600px;	*/
+    margin-top: -70px;
+    box-sizing: border-box;
+		}
+		#login{
+			width:100%;
+			height:60px;
+			border:1px solid #F5F5F5;
+/*			margin-top: -46px;*/
+			background:#F5F5F5;
+			box-sizing:border-box;
+		}
+		#login a{
+			text-decoration:none;
+			font-size:22px;
+			color:#1ABC9C;
+			display:block;
+			height:60px;
+			text-align:center;
+/*			margin-top:20px;*/
+			margin-left:-80px;
+		}
+		#login a:hover{
+			color:#333;
+		}
+		#login span{
+			display:block;
+			text-align:center;
+			margin-left: 120px;
+			margin-top: -60px;
+			font-size:22px;
+		}
+		h6{
+			margin:0;
+			text-decoration: none;
+			font-size: 42px;
+			color: red;
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			margin-left: 35px;
+			font-weight:500;
+			position: relative;
+			top: -795px;
+		}
+		h3{
+			margin:0;
+			text-decoration: none;
+			font-size: 25px;
+			color: rgba(238, 243, 36, 0.66);
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			margin-left: 40px;
+			font-weight:600;
+			position: relative;
+			top: -775px;
+			
+		}
+		#uname{
+			width:530px;
+			height:42px;			
+			margin-top:55px;
+			margin-left:20px;
+			font-weight:500;
+			
+		}
+		
+		#upwd{
+			width:530px;
+			height:42px;			
+			margin-top:35px;
+			margin-left:20px;
+			font-weight:500;
+/*			position: relative;*/
+/*			top: -680px;*/
+		}
+		#cpwd{
+			width:530px;
+			height:42px;			
+			margin-top:35px;
+			margin-left:20px;
+			font-weight:500;
+/*			position: relative;*/
+/*			top: -680px;*/
+		}
+		#email{
+			width:530px;
+			height:42px;			
+			margin-top:35px;
+			margin-left:20px;
+			font-weight:500;
+/*			position: relative;*/
+/*			top: -680px;*/
+		}
+		#sub{
+			margin-top:20px;
+			margin-left:20px;
+		}
+		#phone{
+			width:530px;
+			height:42px;			
+			margin-top:35px;
+			margin-left:20px;
+			font-weight:500;
+/*			position: relative;*/
+/*			top: -680px;*/
+		}
+		form.main{
+			width:1104px;
+			margin:0;
+			height:500px;
+/*			border:1px solid red;*/
+			position: absolute;
+			top: 310px;
+			left: 670px;
+			box-sizing:border-box;
+		}
+		#log{
+			width:530px;
+			height:42px;			
+			margin-top:35px;
+			margin-left:20px;
+			font-weight:500;
+			background:#1ABC9C;
+			border:none;
+			color:#fff;
+			font-size:20px;
+			transition:all .5s linear;
+		}
+		#log:hover{
+			background-color:red;
+		}
+		#bor{
+			width:150px;
+			height:5px;
+			border-top:1px solid red;
+			margin-top:35px;
+			margin-left:700px;
+			margin-left: 890px;
+		}
+		h5{
+			margin:0;
+			text-decoration: none;
+			font-size: 20px;
+			color: #333;
+			display: block;
+			text-align: center;
+			margin-top: 20px;
+			margin-left: 80px;
+			font-weight:500;
+		}
+/*		#weixin{*/
+/*			width:200px;*/
+/*			height:42px;*/
+/*			border:1px solid #1ABC9C;*/
+/*			background:#1ABC9C;*/
+/*			margin-top:35px;*/
+/*			margin-left:745px;*/
+/*			position:relative;*/
+/*			transition:all .5s linear;*/
+/*		}*/
+/*		#weixin:hover{*/
+/*			opacity:0.7;*/
+/*		}*/
+/*		#weixin img{*/
+/*			position:absolute;*/
+/*			width:30px;*/
+/*			height:30px;*/
+/*			line-height:10px;*/
+/*			top: 6px;*/
+/*			left: 37px;*/
+/*		}*/
+/*		#weixin span{*/
+/*			display:block;*/
+/*			font-size:22px;*/
+/*			text-align:center;*/
+/*			margin-top: 5px;*/
+/*			color:#fff;*/
+/*		}*/
+/*		#qq{*/
+/*			width:200px;*/
+/*			height:42px;*/
+/*			border:1px solid #1ABC9C;*/
+/*			background:#1ABC9C;*/
+/*			margin-top:-45px;*/
+/*			margin-left:990px;*/
+/*			position:relative;*/
+/*			transition:all .5s linear;*/
+/*		}*/
+/*		#qq:hover{*/
+/*			opacity:0.7;*/
+/*		}*/
+/*		#qq img{*/
+/*			position:absolute;*/
+/*			width:30px;*/
+/*			height:30px;*/
+/*			line-height:10px;*/
+/*			top: 6px;*/
+/*			left: 37px;*/
+/*		}*/
+/*		#qq span{*/
+/*			display:block;*/
+/*			font-size:22px;*/
+/*			text-align:center;*/
+/*			margin-top: 5px;*/
+/*			color:#fff;*/
+/*		}*/
+		a{
+			text-decoration:none;
+		}
+		#back_align{
+			width:180px;
+			height:40px;
+			color:#fff;
+			border:1px solid #1ABC9C;
+/*			margin-left: 775px;*/
+			margin:0 auto;
+			margin-top: 0;
+			position:relative;
+			top:-235px;
+			transition:all 1s linear;
+		}
+		#back_align:hover{
+			background-color:red;
+		}
+		#back_align a{
+			text-align:center;
+			display: block;
+			margin-top: 9px;
+			color:#fff;
+			transition:all 1s linear;
+		}
+		#back_align a:hover{
+			color:#fff;
+		}

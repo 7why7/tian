@@ -1,0 +1,139 @@
+	#footer{
+			width:100%;
+			height:421px;
+			
+/*			border:1px solid red;*/
+    
+			background-color:#5B8AB1;
+			
+		}
+/*		关于我们*/
+		#footer div.clear-fix{
+			width:800px;
+			height:293px;
+			margin: 0 auto;
+			margin-left: 300px;
+			margin-top: 65px;
+/*			border:1px solid red;*/
+			display:flex;
+			justify-content:space-between;
+		}
+		#footer div.about{
+			width:285px;
+			height:165px;
+/*			border:1px solid red;*/
+			margin-top:40px;
+		}
+		#footer div.link{
+			width:190px;
+			height:290px;
+/*			border:1px solid red;*/
+			margin-top:40px;
+		}
+		#footer div.twi{
+			width:300px;
+			height:290px;
+/*			border:1px solid red;*/
+			margin-top:40px;
+			position:relative;
+		}
+		#footer div.about h3{
+			margin:0;
+			padding:0;
+			font-size: 1.7em;
+			color: #fff;
+			padding-bottom: .5em;
+			margin-bottom: 1em;
+			position: relative;
+			font-weight: 100;
+			letter-spacing: 1px;
+		}
+		#footer div.about h3{
+			margin:0;
+			padding:0;
+			font-size: 1.7em;
+			color: #fff;
+			padding-bottom: .5em;
+			margin-bottom: 1em;
+			position: relative;
+			font-weight: 100;
+			letter-spacing: 1px;
+		}
+/*		链接*/
+		#footer div.link h3{
+			margin:0;
+			padding:0;
+			font-size: 1.7em;
+			color: #fff;
+			padding-bottom: .5em;
+			margin-bottom: 1em;
+			position: relative;
+			font-weight: 100;
+			letter-spacing: 1px;
+		}
+		#footer div.twi h3{
+			margin:0;
+			padding:0;
+			font-size: 1.7em;
+			color: #fff;
+			padding-bottom: .5em;
+			margin-bottom: 1em;
+			position: relative;
+			font-weight: 100;
+			letter-spacing: 1px;
+		}
+		#footer a{
+			text-decoration:none;
+			color:#333;
+		}
+		#footer div.link p{
+			margin-left:0px;
+			margin-top: -180px;
+			padding-top: 10px;
+			margin:0;
+		}
+		#footer div.pp{
+			margin-top:-10px;
+		}
+/*		网站条款*/
+		#footer div.twi p img{
+			width:15px;
+			height:14px;
+		}
+		#footer div.twi p{
+			margin-left:0px;
+			width:280px;
+			color: #777;
+		}
+		#travle img{
+			width:160px;
+			height:160px;
+			margin-left: 1200px;
+			position: absolute;
+			margin-top: -240px;
+			border:none;
+		}
+		#travle p{
+			color: #fff;
+			font-size: 22px;
+			position: absolute;
+			margin-left: 1160px;
+			margin-top: -63px;
+			box-sizing: border-box;
+		}
+		/*		诚信*/
+/*		#promise{*/
+/*			margin-top:5px;*/
+/*		}*/
+		#promise img{
+			width:102px;
+			height:35px;
+			border:none;
+			margin-left: 130px;
+			margin-top: 24px;
+		    position: relative;
+			top: 10px;
+		}
+		#promise span{
+			color:#333;
+		}

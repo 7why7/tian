@@ -1,0 +1,674 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>每周新品</title>
+	<link rel="stylesheet" href="css/new.css">
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+<style>
+#example {
+    position:relative;
+    width:883px;
+/*    border:1px red solid;*/
+    margin-left:355px;
+    padding:15px;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+}
+/* main menu styles */
+#example div.menuholder {
+    float:left;
+    font:normal bold 11px/35px verdana, sans-serif;
+    overflow:hidden;
+    position:relative;
+}
+/*横线的阴影*/
+#example div.menuholder .shadow {
+    -moz-box-shadow:0 0 20px rgba(0, 0, 0, 1);
+    -o-box-shadow:0 0 20px rgba(0, 0, 0, 1);
+    -webkit-box-shadow:0 0 20px rgba(0, 0, 0, 1);
+    background:#888;
+    box-shadow:0 0 20px rgba(0, 0, 0, 1);
+    height:10px;
+    left:50px;
+    position:absolute;
+    top:-9px;
+    width:90%;
+    z-index:100;
+}
+#example div.menuholder .back {
+    -moz-transition-duration:.4s;
+    -o-transition-duration:.4s;
+    -webkit-transition-duration:.4s;
+    background-color:rgba(100, 193, 211, 0.5);
+    height:0;
+    width:100%;
+}
+#example div.menuholder:hover div.back {
+    height:250px;
+}
+/*横线的样式*/
+#example ul.menu {
+    display:block;
+    float:left;
+    list-style:none;
+    margin:0;
+    padding: 15px 354px;
+    position:relative;
+}
+#example ul.menu li {
+    float:left;
+    margin:0 5px 0 0;
+}
+/*Tutorials的样式*/
+#example ul.menu li > a {
+    -moz-border-radius:0 0 10px 10px;
+    -moz-box-shadow:2px 2px 4px rgba(0, 0, 0, 0.9);
+    -moz-transition:all 0.2s ease-in-out;
+    -o-border-radius:0 0 10px 10px;
+    -o-box-shadow:2px 2px 4px rgba(0, 0, 0, 0.9);
+    -o-transition:all 0.2s ease-in-out;
+    -webkit-border-bottom-left-radius:10px;
+    -webkit-border-bottom-right-radius:10px;
+    -webkit-box-shadow:2px 2px 4px rgba(0, 0, 0, 0.9);
+    -webkit-transition:all 0.2s ease-in-out;
+    border-radius:0 0 10px 10px;
+    box-shadow:2px 2px 4px rgba(0, 0, 0, 0.9);
+    color:#eee;
+    display:block;
+    padding:5px 20px;
+    text-decoration:none;
+    transition:all 0.2s ease-in-out;
+}
+
+#example ul.menu li a.orange {
+    background:#FF4500;
+	font-size:32px;
+}
+/*subs   div的样式*/
+.menu li div.subs {
+    left:60px;
+    overflow:hidden;
+    position:absolute;
+    top:55px;
+    width:0;
+}
+/*控制dl的动作*/
+.menu li div.subs dl {
+    -moz-transition-duration:.2s;
+    -o-transition-duration:.2s;
+    -webkit-transition-duration:.2s;
+    float:left;
+    margin:0 130px 0 0;
+    overflow:hidden;
+    padding:40px 0 5% 2%;
+    width:0;
+}
+/*dt标题的样式*/
+.menu dt {
+    color:#e42d67;
+    font-family:arial, sans-serif;
+    font-size:25px;
+    font-weight:700;
+    height:20px;
+    line-height:20px;
+    margin:0;
+    padding:0 0 0 10px;
+    white-space:nowrap;
+}
+.menu dd {
+    margin:0;
+    padding:0;
+	margin-top: 10px;
+    text-align:left;
+}
+.menu dd a {
+    background:transparent;
+    color:#fff;
+    font-size:17px;
+    height:20px;
+	text-decoration: none;
+    line-height:20px;
+    padding:0 0 0 10px;
+    text-align:left;
+    white-space:nowrap;
+    width:80px;
+}
+.menu dd a:hover {
+    color:#FF4500;
+}
+.menu li:hover div.subs dl {
+    -moz-transition-delay:0.2s;
+    -o-transition-delay:0.2s;
+    -webkit-transition-delay:0.2s;
+    margin-right:2%;
+    width:21%;
+}
+ul.menu li:hover > a,ul.menu li > a:hover {
+    background:#aaa;
+    color:#fff;
+    padding:10px 10px 0;
+}
+
+ul.menu li a.orange:hover,ul.menu li:hover a.orange {
+    background:#fc0;
+}
+.menu li:hover div.subs,.menu li a:hover div.subs {
+    width:100%;
+}
+#pages{
+    padding:0px 20px;
+    text-align:right;
+    background:linear-gradient(to top , #f5f4f5,#e6e6e5);
+    height:40px;
+	width:876px;
+	margin-left:350px;
+    line-height:40px;
+}
+#pages a{
+	text-decoration:none;
+	padding:4px 10px;
+	border:1px solid #ddd;
+	border-radius:4px;
+	color:#0aa1ed;
+}
+#pages a.current{
+    border-color:#0aa1ed;
+    background:#0aa1ed;
+    color:#fff;
+}
+#pages a.disabled{
+    color:#bfbfbf;
+    background:#f2f2f2;
+    border:1px solid #bfbfbf;
+}
+
+</style>
+</head>
+<body>
+	<header id="header">
+<!-- 		<iframe src="header.html" frameborder="0"></iframe>	 -->
+	</header>
+	<div id="main-wall">
+	<div id="example">
+    <div class="menuholder">
+        <ul class="menu slide">
+            <li><a href="#" class="orange">周边推荐</a>
+                <div class="subs">
+                    <dl>
+                        <dt>东南亚</dt>
+                        <dd><a href="#">泰国</a></dd>
+                        <dd><a href="#">新加坡</a></dd>
+                        <dd><a href="#">马来西亚</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>中国港澳台</dt>
+                        <dd><a href="#">中国台湾</a></dd>
+                        <dd><a href="#">中国香港</a></dd>
+                        <dd><a href="#">中国澳门</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>大洋洲</dt>
+                        <dd><a href="#">澳大利亚</a></dd>
+                        <dd><a href="#">新西兰</a></dd>
+                        <dd><a href="#">巴厘岛</a></dd>
+                    </dl>
+                    <dl>
+                        <dt>东亚</dt>
+                        <dd><a href="#">韩国</a></dd>
+                        <dd><a href="#">日本</a></dd>
+                        <dd><a href="#">法国</a></dd>
+                    </dl>
+                </div>
+            </li>
+            
+        </ul>
+        <div class="back"></div>
+        <div class="shadow"></div>
+    </div>
+    <div style="clear:both"></div>
+	</div>
+	<div id="result-border">
+<!-- 				<div class="a-title> -->
+<!-- 			<a " href="detail.html"> -->
+					
+<!-- 				<img src="images/new/new1.png" alt=""> -->
+<!-- 							</a> --> 
+<!-- 				<div class="details-txt"> -->
+<!-- 					<p>澳大利亚 | 青春派轰趴</p> -->
+<!-- 					<div> -->
+<!-- 						<span class="s1">460人购买</span> -->
+<!-- 						<em>100%</em> -->
+<!-- 						<span class="s2">好评</span> -->
+<!-- 					</div> -->
+<!-- 					<p class="p1">青春派轰趴致力于为热爱社交的年轻群体提供欢乐的服务，我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，在这里，随心所欲，自在欢乐。</p> -->
+<!-- 					<div class="details-money"> -->
+<!-- 						￥1080 <span>起/份</span> -->
+<!-- 						<input type="button" value="立即购买"> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- <!-- 			</div> -->
+<!-- 			<a href="#"> -->
+<!-- 				<img src="images/new/new2.jpg" alt=""> -->
+<!-- 				<div class="details-txt"> -->
+<!-- 					<p>中国香港 | 青春派轰趴</p> -->
+<!-- 					<div> -->
+<!-- 						<span class="s1">770人购买</span> -->
+<!-- 						<em>100%</em> -->
+<!-- 						<span class="s2">好评</span> -->
+<!-- 					</div> -->
+<!-- 					<p class="p1">青春派轰趴致力于为热爱社交的年轻群体提供欢乐的服务，我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，在这里，随心所欲，自在欢乐。</p> -->
+<!-- 					<div class="details-money"> -->
+<!-- 						￥1000 <span>起/份</span> -->
+<!-- 						<input type="button" value="立即购买"> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</a> -->
+<!-- 			<a href="#"> -->
+<!-- 				<img src="images/new/new3.jpg" alt=""> -->
+<!-- 				<div class="details-txt"> -->
+<!-- 					<p>澳门 | 青春派轰趴</p> -->
+<!-- 					<div> -->
+<!-- 						<span class="s1">630人购买</span> -->
+<!-- 						<em>100%</em> -->
+<!-- 						<span class="s2">好评</span> -->
+<!-- 					</div> -->
+<!-- 					<p class="p1">青春派轰趴致力于为热爱社交的年轻群体提供欢乐的服务，我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，在这里，随心所欲，自在欢乐。</p> -->
+<!-- 					<div class="details-money"> -->
+<!-- 						￥1230 <span>起/份</span> -->
+<!-- 						<input type="button" value="立即购买"> -->
+<!-- 					</div> -->
+<!-- 				</div>	 -->
+<!-- 			</a> -->
+<!-- 			<a href="#"> -->
+<!-- 				<img src="images/new/new4.jpg" alt=""> -->
+<!-- 				<div class="details-txt"> -->
+<!-- 					<p>台湾 | 青春派轰趴</p> -->
+<!-- 					<div> -->
+<!-- 						<span class="s1">980人购买</span> -->
+<!-- 						<em>100%</em> -->
+<!-- 						<span class="s2">好评</span> -->
+<!-- 					</div> -->
+<!-- 					<p class="p1">青春派轰趴致力于为热爱社交的年轻群体提供欢乐的服务，我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，在这里，随心所欲，自在欢乐。</p> -->
+<!-- 					<div class="details-money"> -->
+<!-- 						￥2100 <span>起/份</span> -->
+<!-- 						<input type="button" value="立即购买"> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</a> -->
+<!-- 			<a href="#"> -->
+<!-- 				<img src="images/new/new2.jpg" alt=""> -->
+<!-- 				<div class="details-txt"> -->
+<!-- 					<p>新加坡 | 青春派轰趴</p> -->
+<!-- 					<div> -->
+<!-- 						<span class="s1">2300人购买</span> -->
+<!-- 						<em>100%</em> -->
+<!-- 						<span class="s2">好评</span> -->
+<!-- 					</div> -->
+<!-- 					<p class="p1">青春派轰趴致力于为热爱社交的年轻群体提供欢乐的服务，我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，在这里，随心所欲，自在欢乐。</p> -->
+<!-- 					<div class="details-money"> -->
+<!-- 						￥2210 <span>起/份</span> -->
+<!-- 						<input type="button" value="立即购买"> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</a> -->
+<!-- 			<a href="#"> -->
+<!-- 				<img src="images/new/new2.jpg" alt=""> -->
+<!-- 				<div class="details-txt"> -->
+<!-- 					<p>重庆 | 青春派轰趴</p> -->
+<!-- 					<div> -->
+<!-- 						<span class="s1">0人购买</span> -->
+<!-- 						<em>100%</em> -->
+<!-- 						<span class="s2">好评</span> -->
+<!-- 					</div> -->
+<!-- 					<p class="p1">青春派轰趴致力于为热爱社交的年轻群体提供欢乐的服务，我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，在这里，随心所欲，自在欢乐。</p> -->
+<!-- 					<div class="details-money"> -->
+<!-- 						￥10 <span>起/份</span> -->
+<!-- 						<input type="button" value="立即购买"> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</a> -->
+<!-- 			<a href="#"> -->
+<!-- 				<img src="images/new/new3.jpg" alt=""> -->
+<!-- 				<div class="details-txt"> -->
+<!-- 					<p>重庆 | 青春派轰趴</p> -->
+<!-- 					<div> -->
+<!-- 						<span class="s1">0人购买</span> -->
+<!-- 						<em>100%</em> -->
+<!-- 						<span class="s2">好评</span> -->
+<!-- 					</div> -->
+<!-- 					<p class="p1">青春派轰趴致力于为热爱社交的年轻群体提供欢乐的服务，我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，在这里，随心所欲，自在欢乐。</p> -->
+<!-- 					<div class="details-money"> -->
+<!-- 						￥10 <span>起/份</span> -->
+<!-- 						<input type="button" value="立即购买"> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</a> -->
+<!-- 			<a href="#"> -->
+<!-- 				<img src="images/new/new4.jpg" alt=""> -->
+<!-- 				<div class="details-txt"> -->
+<!-- 					<p>重庆 | 青春派轰趴</p> -->
+<!-- 					<div> -->
+<!-- 						<span class="s1">0人购买</span> -->
+<!-- 						<em>100%</em> -->
+<!-- 						<span class="s2">好评</span> -->
+<!-- 					</div> -->
+<!-- 					<p class="p1">青春派轰趴致力于为热爱社交的年轻群体提供欢乐的服务，我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，在这里，随心所欲，自在欢乐。</p> -->
+<!-- 					<div class="details-money"> -->
+<!-- 						￥10 <span>起/份</span> -->
+<!-- 						<input type="button" value="立即购买"> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</a> -->
+<!-- 			<a href="#"> -->
+<!-- 				<img src="images/new/new1.png" alt=""> -->
+<!-- 				<div class="details-txt"> -->
+<!-- 					<p>重庆 | 青春派轰趴</p> -->
+<!-- 					<div> -->
+<!-- 						<span class="s1">0人购买</span> -->
+<!-- 						<em>100%</em> -->
+<!-- 						<span class="s2">好评</span> -->
+<!-- 					</div> -->
+<!-- 					<p class="p1">青春派轰趴致力于为热爱社交的年轻群体提供欢乐的服务，我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，在这里，随心所欲，自在欢乐。</p> -->
+<!-- 					<div class="details-money"> -->
+<!-- 						￥10 <span>起/份</span> -->
+<!-- 						<input type="button" value="立即购买"> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</a> -->
+<!-- 			<a href="#"> -->
+<!-- 				<img src="images/new/new2.jpg" alt=""> -->
+<!-- 				<div class="details-txt"> -->
+<!-- 					<p>重庆 | 青春派轰趴</p> -->
+<!-- 					<div> -->
+<!-- 						<span class="s1">0人购买</span> -->
+<!-- 						<em>100%</em> -->
+<!-- 						<span class="s2">好评</span> -->
+<!-- 					</div> -->
+<!-- 					<p class="p1">青春派轰趴致力于为热爱社交的年轻群体提供欢乐的服务，我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，在这里，随心所欲，自在欢乐。</p> -->
+<!-- 					<div class="details-money"> -->
+<!-- 						￥10 <span>起/份</span> -->
+<!-- 						<input type="button" value="立即购买"> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</a> -->
+<!-- 			<a href="#"> -->
+<!-- 				<img src="images/new/new3.jpg" alt=""> -->
+<!-- 				<div class="details-txt"> -->
+<!-- 					<p>重庆 | 青春派轰趴</p> -->
+<!-- 					<div> -->
+<!-- 						<span class="s1">0人购买</span> -->
+<!-- 						<em>100%</em> -->
+<!-- 						<span class="s2">好评</span> -->
+<!-- 					</div> -->
+<!-- 					<p class="p1">青春派轰趴致力于为热爱社交的年轻群体提供欢乐的服务，我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，在这里，随心所欲，自在欢乐。</p> -->
+<!-- 					<div class="details-money"> -->
+<!-- 						￥10 <span>起/份</span> -->
+<!-- 						<input type="button" value="立即购买"> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</a> -->
+<!-- 			<a href="#"> -->
+<!-- 				<img src="images/new/new4.jpg" alt=""> -->
+<!-- 				<div class="details-txt"> -->
+<!-- 					<p>重庆 | 青春派轰趴</p> -->
+<!-- 					<div> -->
+<!-- 						<span class="s1">0人购买</span> -->
+<!-- 						<em>100%</em> -->
+<!-- 						<span class="s2">好评</span> -->
+<!-- 					</div> -->
+<!-- 					<p class="p1">青春派轰趴致力于为热爱社交的年轻群体提供欢乐的服务，我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，在这里，随心所欲，自在欢乐。</p> -->
+<!-- 					<div class="details-money"> -->
+<!-- 						￥10 <span>起/份</span> -->
+<!-- 						<input type="button" value="立即购买"> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</a> -->
+<!-- 			<a href="#"> -->
+<!-- 				<img src="images/new/new2.jpg" alt=""> -->
+<!-- 				<div class="details-txt"> -->
+<!-- 					<p>重庆 | 青春派轰趴</p> -->
+<!-- 					<div> -->
+<!-- 						<span class="s1">0人购买</span> -->
+<!-- 						<em>100%</em> -->
+<!-- 						<span class="s2">好评</span> -->
+<!-- 					</div> -->
+<!-- 					<p class="p1">青春派轰趴致力于为热爱社交的年轻群体提供欢乐的服务，我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，在这里，随心所欲，自在欢乐。</p> -->
+<!-- 					<div class="details-money"> -->
+<!-- 						￥10 <span>起/份</span> -->
+<!-- 						<input type="button" value="立即购买"> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</a> -->
+<!-- 			<a href="#"> -->
+<!-- 				<img src="images/new/new2.jpg" alt=""> -->
+<!-- 				<div class="details-txt"> -->
+<!-- 					<p>重庆 | 青春派轰趴</p> -->
+<!-- 					<div> -->
+<!-- 						<span class="s1">0人购买</span> -->
+<!-- 						<em>100%</em> -->
+<!-- 						<span class="s2">好评</span> -->
+<!-- 					</div> -->
+<!-- 					<p class="p1">青春派轰趴致力于为热爱社交的年轻群体提供欢乐的服务，我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，在这里，随心所欲，自在欢乐。</p> -->
+<!-- 					<div class="details-money"> -->
+<!-- 						￥10 <span>起/份</span> -->
+<!-- 						<input type="button" value="立即购买"> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</a> -->
+<!-- 			<a href="#"> -->
+<!-- 				<img src="images/new/new3.jpg" alt=""> -->
+<!-- 				<div class="details-txt"> -->
+<!-- 					<p>重庆 | 青春派轰趴</p> -->
+<!-- 					<div> -->
+<!-- 						<span class="s1">0人购买</span> -->
+<!-- 						<em>100%</em> -->
+<!-- 						<span class="s2">好评</span> -->
+<!-- 					</div> -->
+<!-- 					<p class="p1">青春派轰趴致力于为热爱社交的年轻群体提供欢乐的服务，我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，在这里，随心所欲，自在欢乐。</p> -->
+<!-- 					<div class="details-money"> -->
+<!-- 						￥10 <span>起/份</span> -->
+<!-- 						<input type="button" value="立即购买"> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</a> -->
+<!-- 			<a href="#"> -->
+<!-- 				<img src="images/new/new4.jpg" alt=""> -->
+<!-- 				<div class="details-txt"> -->
+<!-- 					<p>重庆 | 青春派轰趴</p> -->
+<!-- 					<div> -->
+<!-- 						<span class="s1">0人购买</span> -->
+<!-- 						<em>100%</em> -->
+<!-- 						<span class="s2">好评</span> -->
+<!-- 					</div> -->
+<!-- 					<p class="p1">青春派轰趴致力于为热爱社交的年轻群体提供欢乐的服务，我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，在这里，随心所欲，自在欢乐。</p> -->
+<!-- 					<div class="details-money"> -->
+<!-- 						￥10 <span>起/份</span> -->
+<!-- 						<input type="button" value="立即购买"> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</a> -->
+<!-- 			<a href="#"> -->
+<!-- 				<img src="images/new/new3.jpg" alt=""> -->
+<!-- 				<div class="details-txt"> -->
+<!-- 					<p>重庆 | 青春派轰趴</p> -->
+<!-- 					<div> -->
+<!-- 						<span class="s1">0人购买</span> -->
+<!-- 						<em>100%</em> -->
+<!-- 						<span class="s2">好评</span> -->
+<!-- 					</div> -->
+<!-- 					<p class="p1">青春派轰趴致力于为热爱社交的年轻群体提供欢乐的服务，我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，在这里，随心所欲，自在欢乐。</p> -->
+<!-- 					<div class="details-money"> -->
+<!-- 						￥10 <span>起/份</span> -->
+<!-- 						<input type="button" value="立即购买"> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</a> -->
+<!-- 			<a href="#"> -->
+<!-- 				<img src="images/new/new4.jpg" alt=""> -->
+<!-- 				<div class="details-txt"> -->
+<!-- 					<p>重庆 | 青春派轰趴</p> -->
+<!-- 					<div> -->
+<!-- 						<span class="s1">0人购买</span> -->
+<!-- 						<em>100%</em> -->
+<!-- 						<span class="s2">好评</span> -->
+<!-- 					</div> -->
+<!-- 					<p class="p1">青春派轰趴致力于为热爱社交的年轻群体提供欢乐的服务，我们擅长提供自由欢快的聚会解决方案和提供风格各异的轰趴馆聚会场地，在这里，随心所欲，自在欢乐。</p> -->
+<!-- 					<div class="details-money"> -->
+<!-- 						￥10 <span>起/份</span> -->
+<!-- 						<input type="button" value="立即购买"> -->
+<!-- 					</div> -->
+<!-- 				</div> -->
+<!-- 			</a> -->
+
+
+
+			
+		
+		</div>
+<!-- 		旅游攻略                 -->
+		<div id="mod-guide">
+			<h3>旅游攻略</h3>
+			<div class="color1">
+				<a href="">				
+						台湾
+						<span>东部华侨城超强攻略</span>				
+				</a>
+			</div>
+			<div class="color2">
+				<a href="">				
+						澳门
+						<span>东部华侨城超强攻略</span>				
+				</a>
+			</div>
+			<div class="color1">
+				<a href="">				
+						香港
+						<span>东部华侨城超强攻略</span>				
+				</a>
+			</div>
+			<div class="color2">
+				<a href="">				
+						法国
+						<span>东部华侨城超强攻略</span>				
+				</a>
+			</div>
+			<div class="color1">
+				<a href="">				
+						巴黎
+						<span>东部华侨城超强攻略</span>				
+				</a>
+			</div>
+			<div class="color2">
+				<a href="">				
+						日本
+						<span>东部华侨城超强攻略</span>				
+				</a>
+			</div>
+			<div class="color1">
+				<a href="">				
+						韩国
+						<span>东部华侨城超强攻略</span>				
+				</a>
+			</div>
+			<div class="color2">
+				<a href="">				
+						美国
+						<span>东部华侨城超强攻略</span>				
+				</a>
+			</div>
+			<div class="color1">
+				<a href="">				
+						泰国
+						<span>东部华侨城超强攻略</span>				
+				</a>
+			</div>
+			
+		</div>
+<!-- 		热卖新品		 -->
+		<div id="mod-package">
+			<h3>热卖新品</h3>
+			<div>
+				<a href="">
+					<img src="images/new/new4.jpg" alt="">
+					<p class="p1">蚌阜花博园</p>
+				</a>
+				<span>￥12</span>
+				<s>门市价:￥30</s>
+				<button>立即购买</button>
+			</div>
+			<div>
+				<a href="">
+					<img src="images/new/new4.jpg" alt="">
+					<p class="p2">蚌阜花博园</p>
+				</a>
+				<span>￥12</span>
+				<s>门市价:￥30</s>
+				<button>立即购买</button>
+			</div>
+			<div>
+				<a href="">
+					<img src="images/new/new4.jpg" alt="">
+					<p class="p3">蚌阜花博园</p>
+				</a>
+				<span>￥12</span>
+				<s>门市价:￥30</s>
+				<button>立即购买</button>
+			</div>
+			
+		</div>
+
+
+		<!-- 			页码 -->
+	<div id="pages">
+		<a href="#" class="previous disabled">上一页</a>
+		<a href="#" class="current">1</a>
+		<a href="#">2</a>
+		<a href="#" class="next">下一页</a>
+	</div>
+
+</div>
+		<!-- 	加入购物车 -->
+	<div id="cart">
+          <!-- 1、购物车标题 -->
+	  <div class="store_action_right_cart" style="position: fixed; top: 200px;">
+      <div class="store_action_right_cart_top">
+        购物车 <span class="clear rt">清空</span>
+      </div>
+      <div class="store_action_right_cart_content">
+        <div></div>
+        <!--<div id="5">-->
+        <!--<span>精选双人餐</span>-->
+        <!--<div><span class="cart_reduc lf">-</span><input type="text" value="1" class="lf"/><span class="cart_add lf">+</span></div>-->
+        <!--<span class="rt pc">￥:<span class="cart_unit_price">20.00</span></span>-->
+        <!--</div>-->
+      </div>
+      <div class="sarc">
+        <div class="total_price lf">
+          <img src="images/foodstore_car_2.png" alt=""/>￥:<span>0.00</span>
+        </div>
+        <div class="settle lf">
+          <a href="cart.html" style="color:#fff;">去结算</a>
+        </div>
+      </div>
+      </div>
+      </div>
+  </div>
+
+
+	<footer id="footer">
+<!-- 		<iframe src="footer.html" frameborder="0"></iframe> -->
+	</footer>
+	<script src="js/jquery-1.11.3.js"></script>
+	<script src="js/ajax.js"></script>
+	<script src="js/new.js"></script>
+<!--  	<script src="js/index.js"></script>  -->
+ 	<script src="js/header.js"></script> 
+ 	<script src="js/footer.js"></script> 
+	<script src="js/jquery.js"></script>
+
+</body>
+</html>

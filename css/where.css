@@ -1,0 +1,219 @@
+*{
+	margin:0;
+	padding:0;
+}
+a,li,img,{
+	text-decoration:none;
+	list-style:none;
+
+}
+/*#header iframe{*/
+/*	width:100%;*/
+/*}*/
+#footer iframe{
+	width:100%;
+	height:500px;
+	margin-top:100px;
+}
+#mains{
+	background-color:#F3F5F6;
+}
+#where-aim{
+	margin-left: 335px;
+    margin-top: 5px;
+	padding: 18px 0;
+    box-sizing: border-box;
+}
+#where-aim a{
+	text-decoration:none;
+	color:#333;
+}
+#place-title{
+	width:914px;
+	height:46px;
+	background:#fff;
+	border-bottom:1px solid #333;
+	margin-left: 335px;
+	margin-top: 30px;
+}
+#place-title h2{
+	width:90px;
+	height:46px;
+	line-height:46px;
+	font-weight: 700;
+    color: #2b9bd6;
+    font-size: 20px;
+    float: left;
+	margin-left: 30px;
+}
+#place-title a{
+	text-decoration:none;
+	float:right;
+	position: relative;
+    top: 13px;
+	color:#333;
+	margin-right: 25px;
+}
+#place-title a:hover{
+	color:red;
+}
+/*<!-- 	好去处   推荐  最新 -->*/
+
+#place{
+	width:914px;
+	margin-left: 335px;
+	background:#fff;
+	position:relative;
+/*	border:1px solid red;*/
+}
+#place img{
+	padding: 20px 20px;
+}
+#place div.intro{
+	width:510px;
+	height:123px;
+/*	border:1px solid red;*/
+	position:absolute;
+	top: 20px;
+    left: 263px;
+}
+#place div.pl-mod h3{
+	font-size: 20px;
+    width: 452px;
+    overflow: hidden;
+	font-weight: 400;
+	margin: 0;
+    padding: 0;
+	color: #CF2B47;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+#place div.pl-mod p{
+	color: #666;
+    padding: 0 0 15px;
+}
+#place div.pl-mod li{
+	list-style:none;
+}
+#place div.pl-mod a{
+	text-decoration:none;
+}
+#place div.pl-mod p:hover{
+	color:#1571FA;
+}
+
+#place div.intro1{
+	width:510px;
+	height:123px;
+	position: absolute;
+    left: 263px;
+    top: 226px;
+}
+#place div.intro2{
+	width:510px;
+	height:123px;
+	position: absolute;
+    left: 263px;
+    top: 430px;
+}
+#place div.intro3{
+	width:510px;
+	height:123px;
+	position: absolute;
+    left: 263px;
+    top: 635px;
+}
+#place div.intro4{
+	width:510px;
+	height:123px;
+	position: absolute;
+    left: 263px;
+    top: 835px;
+}
+#place div.intro5{
+	width:510px;
+	height:123px;
+	position: absolute;
+    left: 263px;
+    top: 1040px;
+}
+/*********热门好去处  城市旅游攻略*******/
+#sidebar{
+	width:262px;
+	height:900px;
+/*	border:1px solid red;*/
+	position: absolute;
+	top: 193px;
+    left: 1275px;
+	background-color:#fff;
+}
+#sidebar a{
+	text-decoration:none;
+	color:#333;
+}
+#sidebar li{
+	list-style:none;
+}
+
+#sidebar h2{
+	font-size: 16px;
+    color: #666;
+	 margin-left: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+#sidebar ul.travel-guide li a{
+	font-size: 12px;
+    display: block;
+	width: 86px;
+	text-align: center;
+    line-height: 48px;
+    border: 1px dotted #ddd;
+    border-right: none;
+    border-top: none;
+    background: #fff;
+	float:left;
+}
+#sidebar ul.travel-guide li a:hover{
+	background-color:#FF7800;
+	color:#fff;
+	cursor:pointer;
+}
+/**************热门好去处***************/
+#hot-place h3{
+	font-size: 16px;
+    color: #666;
+	 margin-left: 10px;
+	margin-top: 180px;
+    margin-bottom: 20px;
+
+}
+#hot-place img{
+	display: block;
+    width: 96px;
+    height: 72px;
+    float: left;
+    margin-right: 15px;
+    margin-left: 10px;
+    border-radius: 2px;
+	vertical-align: top;
+}
+#hot-place li a:hover{
+	color:#FF7800;
+}
+#hot-place a{
+		color: #666;
+}
+#hot-place li{
+	width: 233px;
+    height: 85px;
+	display: block;
+    line-height: 1.5;
+    margin-bottom: 7px;
+    font-size: 14px;
+    font-weight: 400;
+}
+#hot-place p{
+	margin-left:155px;
+}

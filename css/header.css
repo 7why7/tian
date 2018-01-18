@@ -1,0 +1,126 @@
+	a{
+		text-decoration:none;
+			color:#333;
+		}
+#text {
+/*			width:520px;*/
+			height:50px;
+			border-radius: 25px;
+			border:1px solid gray;
+			margin:0 auto;
+			position: absolute;
+			left: 590px;
+			top: 25px;
+		}
+		#text.tabs{
+			margin:0;
+			padding:0;
+			height:50px;
+			list-style:none;
+			line-height:50px;
+		}
+		
+		#text a{
+			text-decoration: none;
+            text-align: center;
+            padding:0 20px;
+			margin-top:5px;
+			line-height:2;
+			font-size:20px;
+            color: #000;
+            display: block;
+		}
+		ul li{
+			float:left;
+			list-style:none;
+		}
+		#text ul.tabs a:hover{
+			color:#fff;
+/*			border: 1px solid red;*/
+            border-radius:25px ;
+            background-color: #DC284B;
+		}
+	
+		#main{
+			width:100%;
+			height:80px;
+			margin-top:15px;
+			border-bottom:5px solid red;
+		}
+		#logo img{
+			height:70px;
+			margin-left:350px;
+			position: absolute;
+		}
+/*		#text li{*/
+/*			list-style:none;*/
+/*			float:left;*/
+/*			margin-right:40px;*/
+/*			display: block;*/
+/*		}*/
+/*		#text ul{*/
+/*			position:absolute;*/
+/*			top: 15px;*/
+/*			left: 580px;*/
+/*			font-size: 21px;*/
+/*		}*/
+		#search input{
+			width: 170px;
+			height: 16px;
+			padding: 7px 10px;
+			border: 1px solid #e6e6e6;
+			border-radius: 16px;
+			outline: 0;
+			position:absolute;
+			top: 33px;
+			left: 1163px;
+		}
+		#search img{
+			height: 28px;
+			position:absolute;
+			top: 35px;
+			left: 1324px;
+			border-radius: 16px;
+		}
+		#btn{
+			display:block;
+			position:absolute;
+			top: 38px;
+			left: 1380px;
+		}
+		#btn a:hover{
+			color:red;
+		}
+		/*搜索帮助*/
+#shelper{
+    left: 1155px;
+    width: 160px;
+    overflow: hidden;
+    position: absolute;
+    z-index: 100;
+/*    left: -1px;*/
+    top: 48px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    box-shadow: 1px 2px 1px rgba(0,0,0,.2);
+    list-style-type: disc;
+    display:none;
+}
+#shelper>li{
+    overflow: hidden;
+    padding: 1px 6px;
+    line-height: 24px;
+    cursor: pointer;
+}
+#shelper>li:hover,#shelper>li.hover{
+    background: #f5f5f5;
+}
+#shelper>li.focus{ background:lightBlue; }
+#shelper .search-item{
+    color: #005AA0;
+    float: left;
+    width: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}

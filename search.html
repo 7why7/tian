@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index.css"> 
+	<style>
+		#search{
+			background-color:#F3F5F6;
+		}
+		#search-text{
+			width:1180px;
+			height:295px;
+			margin-left: 385px;
+			background-color:#fff;
+			border:1px solid red;
+		}
+		#search-text h2{
+			margin-left: 20px;
+			margin-top: 10px;
+			margin-bottom: 10px;
+			font-size: 26px;
+			font-weight: 400;
+		}
+		hr{
+			width: 1135px;
+			margin: 0 auto;
+		}
+		#search-text h3{
+			margin:0;
+			margin-left: 20px;
+			font-size: 16px;
+			
+			padding: 20px 0 10px;
+		}
+		#search-text span{
+			display:inline-block;
+			margin-top: 20px;
+			margin-left: 15px;
+			color: #ff7800;
+			position: absolute;
+			top: 212px;
+			left: 480px;
+			cursor: pointer;
+		}
+		#search-text ul{
+			margin-left:20px;
+		}
+		#search-text ul li{
+			list-style:none;
+			float:left;
+			cursor: pointer;
+			margin-right:20px;
+		}
+		#search-text ul li:hover{
+/*			padding: 3px 5px;*/
+		    border-radius: 2px;
+			color:#fff;
+			box-sizing:border-box;
+			border:1px solid transparent;
+			background-color:orange;
+		}
+		#search-text div.input{
+			width:300px;
+			height:30px;
+		}
+		#search-text div.input input{
+			width:300px;
+			height:30px;
+			margin-left: 20px;
+			margin-top: 15px;
+		}
+		#search-text div.input button{
+			width: 60px;
+			display: block;
+			height: 34px;
+			margin-left: 323px;
+			margin-top: -34px;
+			border:none;
+			border-radius:2px;
+			cursor:pointer;
+			color:#fff;
+			background-color:#FF7800; 
+		}
+	</style>
+</head>
+<body>
+	<header id="header">
+		<iframe src="header.html" frameborder="0"></iframe>	
+	</header>
+	<div id="search">
+		<div id="search-text">
+			<h2>团购套餐查询</h2>
+			<hr>
+			<h3>团购网站:</h3>
+			<span>美团团购预约专用</span>
+			<ul>
+				<li class="active">券号搜索</li>
+				<li>条件搜索</li>
+			</ul>
+			<div class="input">
+				<input type="text" placeholder="请输入美团网给您的12位券号">
+				<button>查找</button>	
+			</div>
+		</div>
+
+
+
+	</div>
+
+
+
+	<footer id="footer">
+		<iframe src="footer.html" frameborder="0"></iframe>
+	</footer>
+</body>
+</html>

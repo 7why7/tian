@@ -1,0 +1,515 @@
+#header iframe{
+			width:1900px;
+/*			height:600px;	*/
+		}
+		#footer iframe{
+			margin:0 auto;
+			width:1900px;
+			height:600px;	
+		}
+		#where{
+			margin-top:20px;
+			background-color:#F3F5F6;
+		}
+		#slider-box{
+			width:1170px;
+			height:330px;
+/*			margin-left:325px;*/
+			margin:0 auto;
+			background-color:#fff;
+			display:flex;
+			flex-wrap:wrap;
+			justify-content:space-between;
+/*			border:1px solid red;*/
+		}
+		#banner1{
+			width:700px;
+			height:300px;
+			margin:0 auto;
+			margin-left:0px;
+			overflow:hidden;
+			position:relative;
+/*			border:1px solid red;*/
+		}
+		#banner-img1{
+			width:5800px;
+			height:300px;
+			position:relative;
+/*			border:1px solid red;*/
+			left:0;			
+			margin:0;
+			padding:0;
+			float:left;
+		}
+		#banner-img1 li{
+			list-style:none;
+			float:left;
+		}
+		#banner1 img{
+			width:700px;
+			height:300px;
+		}
+/*		导航圆点***************/
+		#indicators1{
+			position:absolute;
+			bottom:30px;
+			margin:0 auto;
+			margin-left: 220px;
+			display:flex;
+			justify-content:space-between;
+		}
+		#indicators1 .hover{
+			background:red;
+		}
+		#indicators1 li{
+			/*宽度，高度，倒角，背景颜色，右外边距，左浮动*/
+			width:15px;
+			height:15px;
+			border-radius:50%;
+			background:#fff;
+			margin-right:15px;
+			float:left;
+			list-style:none;
+			cursor:pointer;
+		}
+/*		奇幻大冒险*/
+		#slider-right{
+			width:430px;
+			height:300px;
+/*			border:1px solid red;*/
+		}
+		#slider-right h1{
+			margin:0;
+			padding:0;
+			font-size: 22px;
+/*			text-align:center;*/
+			font-weight: bold;
+			color: #333;
+		}	
+		 #slider-right div.section{
+			height: 62px;
+			color: #999;
+			margin: 10px 0;
+			margin-bottom: 20px;
+			margin-top: 20px;
+			overflow: hidden;
+		}
+		#slider-right em{
+			font-size: 20px;
+			font-style: normal;
+			margin-right: 2px;
+			color: #ff4500;
+		}
+		#slider-right strong{
+			font-weight: bold;
+			font-size: 28px;
+			color: #ff4500;
+		}
+		#slider-right i{
+			color: #999;
+			font-style: normal;
+			margin-left: 10px ;
+		}	
+		#slider-right span{
+			color: #999;
+			margin-left: 10px ;
+		}
+		#slider-right span.p1{
+			text-decoration:line-through;
+		}
+		#slider-right span.p{
+			color:#333;
+   		    margin-left: 30px;
+
+		}
+		#slider-right span.p em{
+			color: #ff4500;
+			font-size:14px;
+		}
+		#slider-right div.app-box{
+			width:430px;
+			height:60px;
+/*			background-color:#F3F5F6;*/
+			margin-top: 20px;
+/*			border:1px solid red;*/
+		}
+		#slider-right div.app-box p{
+			margin:0;
+			padding:0;
+			margin-bottom: 10px;
+			color:#64B052;
+		}
+		#slider-right div.app-box em{
+			color: #ff4500;
+			font-size:16px;
+		}
+/*		倒计时*/
+		#slider-right #time{
+			font-size:18px;
+			color:red;
+		}
+		#share{
+			float:right;
+			margin-right:10px;
+			margin-top: 40px;
+		}
+		#share a{
+			text-decoration:none;
+			color:#333;
+			margin-left:10px;
+		}
+/*		出行日期*/
+		#going{
+			margin-top:20px;
+			width:910px;
+			height:100px;
+			margin-left:368px;
+/*			border:1px solid red;*/
+			background-color:#fff;
+		}
+		#going span{
+			font-size: 25px;
+			font-weight: bold;
+			text-indent: 12px;
+			color: #666;
+			margin-top: 30px;
+			margin-left: 25px;
+			position: absolute;
+		}	
+		#going input.myDate{
+			position:absolute;
+			top:7px;
+			color: #ff7800;
+			cursor: pointer;
+			border-radius: 2px;
+			border: 1px solid #ff7800;
+		}
+/*		购买须知*/
+		#sub-ment{
+		
+			width:910px;
+			height:50px;
+			margin-top:20px;
+			margin-left:368px;
+/*			border:1px solid red;*/
+		}
+		#sub-ment a{
+			background-color: #fff;
+			float: left;
+			width:226.5px;
+			font-size: 20px;
+			height: 50px;
+			color:#333;
+			line-height: 2.5;
+			text-decoration: none;
+			border-right: 1px #e9eef2 solid;
+			border-radius:25px;
+			text-align: center;  
+			transition:all .5s linear;
+		}
+		#sub-ment a:hover{
+			color:#fff;
+			background-color:red;
+		}
+		#sub-ment a.active{
+			color:#fff;
+			background-color:red;
+		}
+/*		详情--购买须知*/
+		#box-title{
+			width:910px;
+			margin-top:20px;
+			margin-left:368px;
+/*			border:1px solid red;*/
+			background-color: #fff;
+			border-bottom: 1px #e1e1e1 solid;
+		}
+		#box-title p.p1{
+			margin:0;
+			margin-left:50px;
+			font-size:24px;			
+			color: #333;
+			line-height: 70px;
+			font-weight: bold;
+		}
+		#box-title p.p2{
+			margin:0;
+			margin-left:50px;
+			font-size:24px;			
+			color: #333;
+			line-height: 70px;
+			font-weight: bold;
+		}
+		#cont{
+			width:910px;
+/*			margin-top:20px;*/
+			margin-left:368px;
+/*			border:1px solid red;*/
+			background-color: #fff;
+		}
+		#cont strong{
+			font-weight: bold;
+			margin-left:20px;
+			margin-top:10px;
+		}
+		#cont strong.str1{
+			font-weight: bold;
+			left:-350px;
+			margin-top:240px;
+			position: relative;
+			display: block;
+		}
+		#cont strong.str2{
+			font-weight: bold;
+			position: relative;
+			display: block;
+		}
+		#cont strong.str4{
+			font-weight: bold;
+			position: relative;
+			display: block;
+			margin-top:120px;
+		}
+		#cont strong.str5{
+			font-weight: bold;
+			position: relative;
+			display: block;
+			margin-top:325px;
+			    left: -765px;
+		}
+		#cont ul li{
+			margin-top:10px;
+			margin-bottom: 10px;
+			font-size:14px;
+			line-height: 2;
+			list-style:none;
+			margin-left: 30px;
+			font-family: "Microsoft YaHei";
+		}
+		#cont h4{
+			font-weight:normal;
+			margin-left:20px;
+		}
+		#cont ul.guide{
+			list-style:none;
+		}
+		#cont em{
+			
+			font-size: 16px;
+			margin: 10px 0;
+			margin-left:30px;
+			color: #ff9000;
+			font-style:normal;
+			font-weight: normal;			
+		}
+		#cont ul.lazy-pic{
+			list-style:none;
+		}
+		#cont ul.lazy-pic p{
+			margin-left:30px;
+		}
+		#cont ul.lazy-pic span{
+			margin-left:30px;
+		}
+		#cont ul.lazy-pic img{
+			width:825px;
+			height:460px;
+			margin-left: 10px;
+			margin-top:20px;
+		}
+/*		用户评价****************/
+		#sevaluate{
+			width:910px;			
+			margin-left:368px;
+			    margin-top: 5070px;
+/*			border:1px solid red;*/
+			background-color: #fff;
+		}
+		#sevaluate a{
+			display: block;
+			width:350px;
+			height:40px;
+			padding-left:60px;
+/*			box-sizing:border-box;*/
+			font-size: 23px;
+			color: red;
+			margin-left: 60px;
+			line-height: 5;
+		}
+		#sevaluate ul.pro{
+			margin: 0;
+			list-style: none;
+			padding: 15px;
+			margin-top: -31px;
+			margin-left: 550px;
+		}
+/*		评论***************/
+		#sevaluate div.said{
+			width:910px;	
+		}
+		#sevaluate div.said span{
+			float: left;
+			display: inline-block;
+			text-align: center;
+			background-color: #F3F5F6;
+		}
+		#sevaluate span.tit-a{
+			width:174px;
+		}
+		#sevaluate span.tit-b{
+			width:512px;
+		}
+		#sevaluate span.tit-c{
+			width:224px;
+		}
+/*		用户评论*/
+		#user-pic{
+			margin-top: 46px;
+			width: 908px;
+			height: 105px;
+/*			border: 1px solid red;*/
+			margin-left: 0px;
+			position: relative;
+		}
+		#user-pic img.user-img{
+			 margin-left: 35px;
+			 margin-top: 5px;
+		}
+		#user-pic span.user-name{
+			margin-left: 15px;
+			position: absolute;
+			top: 80px;
+			left: 40px;
+			font-size: 12px;
+		}
+		#user-pic p{
+			position: absolute;
+			width: 512px;
+			top: 35px;
+			left: 181px;
+			color:#999;
+			font-size: 12px;
+		}
+		#s-start{
+			width: 200px;
+			height: 96px;
+			margin-left: 706px;
+			padding: 20px;
+/*			border: 1px solid red;*/
+			margin-top: -76px;
+			box-sizing: border-box;
+		}
+		#s-start p{
+			margin-left: 540px;
+			margin-top: 15px;
+			/* overflow: hidden; */
+			width: 150px;
+		}
+/*		地图***********************/
+		#box-map{
+			width: 240px;
+/*			height: 260px;*/
+			position: absolute;
+/*			border: 1px solid red;*/
+			background-color:#fff;
+			top: 470px;
+			left: 1300px;
+		}
+		#box-map img{
+			width: 240px;
+			height: 200px;
+		}
+		#box-map b{
+			font-size:14px;
+		}
+		#box-map span.traffic{
+			background: #9ece14;
+			color: #fff;
+			font-size:14px;
+			padding: 0 3px;
+			border-radius: 3px;
+			cursor: pointer;
+			margin-left: 10px;
+		}
+		#box-map p{
+			margin:0;
+			padding:0;
+			font-size:14px;
+		}
+/*		周边套餐********/
+		#pro-box{
+			width: 240px;
+/*			height: 260px;*/
+			position: absolute;
+/*			border: 1px solid red;*/
+			background-color:#fff;
+			top: 810px;
+			left: 1300px;
+		}
+		#pro-box img{			
+			margin-top:15px;
+			margin-left:10px;
+			cursor:pointer;
+		}
+		#pro-box p{
+			position: absolute;
+			width: 210px;
+			height: 1535px;
+			overflow: hidden;
+			left: 11px;
+			font-size: 14px;
+			bottom: 0;
+			margin:0;
+			margin-left:2px;
+			line-height: 24px;
+			padding: 0 5px;
+			color: #fff;
+			z-index: 10;
+		}
+		#pro-box p.p2{
+			position: absolute;
+			height: 1370px;
+		}
+		#pro-box p.p3{
+			position: absolute;
+			height: 1205px;
+		}
+		#pro-box p.p4{
+			position: absolute;
+			height: 1040px;
+		}
+		#pro-box p.p5{
+			position: absolute;
+			height: 875px;
+		}
+		#pro-box p.p6{
+			position: absolute;
+			height: 708px;
+		}
+		#pro-box p.p7{
+			position: absolute;
+			height: 543px;
+		}
+		#pro-box p.p8{
+			position: absolute;
+			height: 377px;
+		}
+		#pro-box p.p9{
+			position: absolute;
+			height: 210px;
+		}
+		#pro-box p.p10{
+			position: absolute;
+			height: 45px;
+		}
+		#pro-box span{
+			font-size: 16px;
+			color: #ff4500;
+			font-weight: bold;
+			margin-left: 10px;
+		}
+		#pro-box del{
+			font-size: 12px;
+			margin-left: 12px;
+			color: #999;
+		}
